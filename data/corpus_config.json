@@ -1,0 +1,20 @@
+{
+  "document_id": "openstax-pds",
+  "title": "Principles of Data Science (OpenStax)",
+  "source_path": "data/raw/Principles-of-Data-Science-WEB.pdf",
+  "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Principles-of-Data-Science-WEB.pdf",
+  "landing_page": "https://openstax.org/details/books/principles-data-science",
+  "license_or_permission": "CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/), as stated on the OpenStax book page; used for non-commercial coursework with attribution",
+  "accessed_at": "2026-11-13T10:24:19Z",
+  "http_last_modified": "Tue, 21 Apr 2026 19:57:54 GMT",
+  "sha256": "6b47205459a2f4e25a2b2a86369e674a26a5ae566a4cc428dd31047670692398",
+  "physical_pages_in_file": 569,
+  "page_numbering": "page = 1-based physical PDF page index; printed_page = number printed in the running header (printed = physical - 10 for these chapters)",
+  "chapters": [
+    {"chapter": 2, "title": "Collecting and Preparing Data", "first_page": 67, "last_page": 103,
+     "excluded_after": "Key Terms (p.104), Group Project, Critical Thinking, References"},
+    {"chapter": 8, "title": "Ethics Throughout the Data Science Cycle", "first_page": 387, "last_page": 413,
+     "excluded_after": "Key Terms (p.414), Group Project, Chapter Review, Critical Thinking, References"}
+  ],
+  "content_page_rule": "Only the chapter opener + numbered sections are ingested; end-of-chapter exercises, key terms and references are excluded. A page counts as a content page if its normalized body text has at least 500 characters."
+}

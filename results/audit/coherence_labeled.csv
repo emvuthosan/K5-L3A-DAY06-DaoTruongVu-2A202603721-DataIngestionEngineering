@@ -1,0 +1,117 @@
+﻿position_id,page,char_offset,strategy,chunk_id,section_id,chunk_text,label_0_1_2,reason,labeler
+pos01,67,1183,A,A:openstax-pds:p0067:c002,2.0,"data, a robust approach to data collection is crucial for ensuring accurate and meaningful results. This process requires following a comprehensive and systematic methodology designed to ensure the quality, reliability, and validity of data gathered for analysis. It involves identifying and sourcing relevant data from diverse sources, including internal databases, external repositories, websites, and user-generated information. And it requires meticulous planning and execution to guarantee the",1,"Starts mid-sentence ('data, a robust approach...') and ends cut at 'guarantee the'; main idea readable.",Claude (AI draft)
+pos01,67,1183,B,B:openstax-pds:p0067:c003,2.0,"With today's ever-increasing volume of data, a robust approach to data collection is crucial for ensuring accurate and meaningful results. This process requires following a comprehensive and systematic methodology designed to ensure the quality, reliability, and validity of data gathered for analysis. It involves identifying and sourcing relevant data from diverse sources, including internal databases, external repositories, websites, and user-generated information. And it requires meticulous planning and execution to guarantee the accuracy, comprehensiveness, and reliability of the collected data.",2,"Whole paragraph from the chapter introduction, starts and ends on sentence boundaries.",Claude (AI draft)
+pos02,74,2205,A,A:openstax-pds:p0074:c004,2.2,"of interest is represented in the sample. These quotas are based on specific demographic characteristics, such as age, gender, ethnicity, and occupation, which are believed to have a direct or indirect relationship with the research topic. Quota sampling is generally used in market research and opinion polls, as it allows for a fast and cost-effective way to gather data from a diverse range of individuals. However, it is important to note that the results of quota sampling may not accurately re",1,Starts with a fragment of the quota-sampling definition ('of interest is represented...') and ends cut ('may not accurately re').,Claude (AI draft)
+pos02,74,2205,B,B:openstax-pds:p0074:c003,2.2,"Quota sampling is generally used in market research and opinion polls, as it allows for a fast and cost-effective way to gather data from a diverse range of individuals. However, it is important to note that the results of quota sampling may not accurately represent the entire population, as the sample is not randomly selected and may be biased toward certain characteristics. Therefore, the findings from studies using quota sampling should be interpreted with caution. 9. Volunteer sampling. Volunteer sampling refers to the fact that the participants are not picked at random by the researcher, but instead volunteer themselves to be a part of the study. This type of sampling is commonly used in studies that involve recruiting participants from a specific population, such as a specific community or organization.",2,"Names quota sampling explicitly, complete sentences; next list item (volunteer sampling) also starts cleanly.",Claude (AI draft)
+pos03,81,1264,A,A:openstax-pds:p0081:c002,2.3,"regular expression. For example, the regular expression ""a*""
+
+would match an ""a"" followed by any number (including zero) of additional ""a""s, such as ""a"", ""aa"",
+
+""aaa"", etc.
+
+• The ? character is known as the ""question mark"" and is used to indicate that the preceding character or group is optional. It matches either zero or one occurrences of the preceding character or group. For example, the regular expression ""a?b"" would match either ""ab"" or ""b"".
+
+• The + character is known as the ""plus sign""",1,"Regex list fragment: begins 'regular expression. For example' and ends at 'The + character is known as the ""plus sign""'.",Claude (AI draft)
+pos03,81,1264,B,B:openstax-pds:p0081:c001,2.3,"would match an ""a"" followed by any number (including zero) of additional ""a""s, such as ""a"", ""aa"",
+
+""aaa"", etc.
+
+• The ? character is known as the ""question mark"" and is used to indicate that the preceding character or group is optional. It matches either zero or one occurrences of the preceding character or group. For example, the regular expression ""a?b"" would match either ""ab"" or ""b"".
+
+• The + character is known as the ""plus sign"" and is used to match one or more occurrences of the preceding character or group. For example, the regular expression ""a+b"" would match one or more
+
+""a""s followed by a ""b"", such as ""ab"", ""aab"", ""aaab"", etc. If there are no ""a""s, the match will fail. This is different from the * character, which would match zero or more ""a""s followed by a ""b"", allowing for a possible match without any ""a""s.
+
+EXAMPLE 2.5
+
+Problem
+
+Write Python code using regular expressions to search for a selected word ""Python"" in a given string and print the number of times it appears.",1,"Starts mid-sentence 'would match an ""a""...' because a quoted token ended the previous paragraph (normalization did not re-join it); rest is coherent.",Claude (AI draft)
+pos04,88,739,A,A:openstax-pds:p0088:c001,2.4,"re 2.2 US Retail Employment with Outliers (Data source: Bureau of Labor Statistics; credit: modification of work by Hyndman, R.J., & Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on April 23, 2024)
+
+Solution a. Based on the visual evidence, it appears that an outlier is present in the employment data for March 28,
+
+1990. The employment level during this month shows a significant jump from approximately 5,400 t",0,"Starts with a broken word ('re 2.2 US Retail...'), mostly a figure credit, and the key fact is cut at '5,400 t'.",Claude (AI draft)
+pos04,88,739,B,B:openstax-pds:p0088:c000,2.4,"EXAMPLE 2.6
+
+Problem
+
+Starting in 1939, the United States Bureau of Labor Statistics tracked employment on a monthly basis. The number of employers in the construction field between 1939 and 2019 is presented in Figure 2.2.
+
+a. Determine if there is any outlier in the dataset that deviates significantly from the overall trend. b. In the event that the outlier is not a reflection of real employment numbers, how would you handle the outliers?
+
+Figure 2.2 US Retail Employment with Outliers (Data source: Bureau of Labor Statistics; credit: modification of work by Hyndman, R.J., & Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on April 23, 2024)
+
+Solution a. Based on the visual evidence, it appears that an outlier is present in the employment data for March 28,",1,"Example 2.6 problem is complete, but the chunk stops at the first line of the solution ('March 28,'), so the answer is in the next chunk.",Claude (AI draft)
+pos05,95,883,A,A:openstax-pds:p0095:c001,2.4,"ization Breaking text data into individual words or phrases (tokens)
+
+Original Text: ""Tokenization is the process of breaking down a sentence, paragraph, or entire text into smaller parts called tokens.""
+
+Tokenized Text: ""Tokenization"", ""is"", ""the"", ""process"", ""of"", ""breaking"", ""down"", ""a"", ""sentence"", "","", ""paragraph"", "","", ""or"",
+
+""entire"", ""text"", ""into"", ""smaller"", ""parts"", ""called"", ""tokens"", "".""
+
+Lowercasing Converting all text to lowercase to avoid multiple representations of the identical",0,"Starts with a broken word ('ization Breaking text...'), flattened table cells, ends mid-row.",Claude (AI draft)
+pos05,95,883,B,B:openstax-pds:p0095:c001,2.4,"Text Preprocessing
+
+Text preprocessing is a technique of preparing data in text format for further analysis and natural language processing tasks. It involves transforming unstructured text data into a more structured format to be interpreted by algorithms and models. Some common techniques used in text preprocessing are reviewed in Table 2.8.
+
+Preprocessing
+
+Technique
+
+Explanation Example
+
+Tokenization Breaking text data into individual words or phrases (tokens)
+
+Original Text: ""Tokenization is the process of breaking down a sentence, paragraph, or entire text into smaller parts called tokens.""
+
+Tokenized Text: ""Tokenization"", ""is"", ""the"", ""process"", ""of"", ""breaking"", ""down"", ""a"", ""sentence"", "","", ""paragraph"", "","", ""or"",
+
+""entire"", ""text"", ""into"", ""smaller"", ""parts"", ""called"", ""tokens"", "".""
+
+Lowercasing Converting all text to lowercase to avoid multiple representations of the identical word",2,Heading 'Text Preprocessing' + intro + first table rows ending on a full row; understandable on its own.,Claude (AI draft)
+pos06,101,1690,A,A:openstax-pds:p0101:c003,2.5,"data management techniques in health care systems. Through accurate and efficient management and analysis of patient data, hospitals and health care providers are able to make informed decisions, eventually resulting in a more efficient and effective health care system overall.
+
+Cloud Computing
+
+Cloud computing delivers a cost-effective solution for storing vast amounts of data, enabling seamless collaboration and data transfer among remote groups. This technology comprises remote-access tools",1,"Tail of the hospital DBMS paragraph plus the first sentence of 'Cloud Computing', cut at 'remote-access tools'.",Claude (AI draft)
+pos06,101,1690,B,B:openstax-pds:p0101:c003,2.5,"Cloud Computing
+
+Cloud computing delivers a cost-effective solution for storing vast amounts of data, enabling seamless collaboration and data transfer among remote groups. This technology comprises remote-access tools for storage, processing, and analytics, facilitating multiple users' access regardless of their physical location. Moreover, cloud computing boasts a diverse range of data collection tools, including machine learning, and data warehouses, streamlining the data assembly operation and improving overall efficiency. Cloud computing equips data scientists with the necessary resources and flexibility to effectively collect, manage, and analyze data for their projects. Some examples of cloud storage are Amazon AWS, Microsoft Azure, and Google Cloud.
+
+EXAMPLE 2.8
+
+Problem",2,Entire 'Cloud Computing' subsection; only a dangling 'EXAMPLE 2.8 Problem' label at the end.,Claude (AI draft)
+pos07,391,1760,A,A:openstax-pds:p0391:c003,8.1,"research and create policies and procedures for data privacy and security. d. Gadget Galaxy must halt the project and seek guidance from a regulatory compliance expert to develop appropriate policies and procedures.
+
+Solution
+
+The correct choice is D. Gadget Galaxy must halt the project and seek guidance from a regulatory compliance expert to develop appropriate policies and procedures. The project team should undergo training on regulatory compliance to ensure team members understand and observ",1,"Starts inside answer option c ('research and create policies...'), ends cut at 'observ'.",Claude (AI draft)
+pos07,391,1760,B,B:openstax-pds:p0391:c002,8.1,The correct choice is D. Gadget Galaxy must halt the project and seek guidance from a regulatory compliance expert to develop appropriate policies and procedures. The project team should undergo training on regulatory compliance to ensure team members understand and observe these policies and procedures. An external review or risk analysis should also be conducted to identify any potential compliance gaps and address them accordingly.,1,Complete solution paragraph but 'The correct choice is D.' refers to options that are not in the chunk.,Claude (AI draft)
+pos08,398,1764,A,A:openstax-pds:p0398:c003,8.1,"pany. Since the data being shared is a mix of qualitative and quantitative data, an online file sharing app such as Google Drive or Microsoft OneDrive is most appropriate. Permissions should be granted to various team members based on their need to know.
+
+8.2 Ethics in Data Analysis and Modeling
+
+Learning Outcomes
+
+By the end of this section, you should be able to:
+
+• 8.2.1 Define bias and fairness in the context of data science and machine learning. • 8.2.2 Identify sensitive data elements and",1,"Starts with 'pany.', mixes the end of Example 8.x (section 8.1) with the 8.2 heading and learning outcomes; section metadata says 8.1 only.",Claude (AI draft)
+pos08,398,1764,B,B:openstax-pds:p0398:c002,8.2,"8.2 Ethics in Data Analysis and Modeling
+
+Learning Outcomes
+
+By the end of this section, you should be able to:
+
+• 8.2.1 Define bias and fairness in the context of data science and machine learning. • 8.2.2 Identify sensitive data elements and implement data anonymization techniques. • 8.2.3 Apply data validation techniques, such as cross-validation and outlier detection.
+
+In today's technology, industries produce massive amounts of data every day, and with the improvement in digital resources, analyzing and modeling the delivered data has evolved into an essential part of decision-making in many fields, such as business, health care, education, and government. However, with the control and influence that data analysis and modeling hold, it is crucial to consider the ethical implications of this practice.",2,"8.2 heading + learning outcomes + intro paragraph, all one topic.",Claude (AI draft)
+pos09,405,1936,A,A:openstax-pds:p0405:c004,8.3,"to these practices:
+
+1. Exercise objectivity when drafting and presenting any reports or findings. 2. Acknowledge all third-party data sources appropriately. 3. Ensure that all visualizations are unambiguous and do not focus on any sensationalized data points. 4. Construct visualizations in a meaningful way, utilizing appropriate titles, labels, scales, and legends. 5. Present all data in a complete picture, avoiding masking or omitting portions of graphs. 6. Ensure that the scales on all axes i",1,Starts 'to these practices:' and stops at item 6 of the list.,Claude (AI draft)
+pos09,405,1936,B,B:openstax-pds:p0405:c003,8.3,"1. Exercise objectivity when drafting and presenting any reports or findings. 2. Acknowledge all third-party data sources appropriately. 3. Ensure that all visualizations are unambiguous and do not focus on any sensationalized data points. 4. Construct visualizations in a meaningful way, utilizing appropriate titles, labels, scales, and legends. 5. Present all data in a complete picture, avoiding masking or omitting portions of graphs. 6. Ensure that the scales on all axes in a chart are consistent and proportionate. 7. Exercise caution when implying causality between connected data points, providing supporting evidence if needed. 8. Utilize representative datasets of the population of interest.",1,"All 8 practices complete, but the lead-in sentence saying who must follow them is in the previous chunk.",Claude (AI draft)
+pos10,412,2224,A,A:openstax-pds:p0412:c004,8.3,"inciples, data scientists and researchers can help mitigate these barriers and ensure that the presented data is accessible and inclusive to a wide range of individuals.
+
+In addition to differences of ability, there are also significant issues in the ability of some individuals to access and use digital technologies because of socioeconomic differences. The digital divide refers to the gap between those who have access to digital technologies, such as the internet and computers, and those who do",1,"Starts with 'inciples,' and cuts the digital-divide definition at 'those who do'.",Claude (AI draft)
+pos10,412,2224,B,B:openstax-pds:p0412:c004,8.3,"In addition to differences of ability, there are also significant issues in the ability of some individuals to access and use digital technologies because of socioeconomic differences. The digital divide refers to the gap between those who have access to digital technologies, such as the internet and computers, and those who do not. Factors such as geographic location, age, education level, and income level contribute to the digital divide, which can lead to data inequality, where certain groups are underrepresented or excluded from data-driven decision-making. Addressing the digital divide through investments in infrastructure (e.g., developing reliable internet access in underserved areas), digital literacy education, and inclusive data collection (methods that do not rely solely on participants having access to technology) will ultimately narrow this divide and foster greater social and economic equity.",2,"Complete paragraph defining the digital divide, causes and remedies.",Claude (AI draft)

@@ -1,0 +1,120 @@
+{
+  "built_at": "2026-11-13T10:49:08Z",
+  "embedding": {
+    "provider": "local / sentence-transformers",
+    "model": "BAAI/bge-small-en-v1.5",
+    "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "dimensions": 384,
+    "max_seq_length_tokens": 512,
+    "normalize_embeddings": true,
+    "query_instruction": "Represent this sentence for searching relevant passages: ",
+    "document_processing": "raw chunk text, no prefix",
+    "device": "cpu",
+    "cost_usd": 0.0
+  },
+  "vector_store": {
+    "engine": "chromadb",
+    "version": "1.5.9",
+    "path": "chroma_db",
+    "metric": "cosine",
+    "index": "HNSW (approximate); see results/ann_check.json"
+  },
+  "strategies": {
+    "A": {
+      "chunking": "fixed_size",
+      "chunk_size": 500,
+      "overlap": 50,
+      "collection": "A",
+      "filter": "none",
+      "hypothesis": "Baseline: fixed windows often cut sentences/evidence at boundaries.",
+      "chunk_count": 457,
+      "chunk_chars": {
+        "min": 52,
+        "p10": 369.4,
+        "median": 500,
+        "mean": 468.9,
+        "p90": 500.0,
+        "max": 500
+      },
+      "chunk_tokens": {
+        "min": 12,
+        "p10": 71.0,
+        "median": 95,
+        "mean": 93.6,
+        "p90": 113.2,
+        "max": 211
+      },
+      "total_chars": 214291,
+      "total_tokens": 42766,
+      "chunks_over_max_seq_length": 0,
+      "seconds": {
+        "chunk": 0.004,
+        "embed": 13.01,
+        "upsert": 0.5
+      },
+      "cost_usd": 0.0,
+      "upsert": {
+        "before": 0,
+        "after": 457,
+        "deleted_obsolete": 0,
+        "upserted": 457
+      }
+    },
+    "B": {
+      "chunking": "by_paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "collection": "B",
+      "filter": "none",
+      "hypothesis": "Heading/paragraph-aware chunks keep ideas whole -> better coherence and Evidence Hit@3.",
+      "chunk_count": 301,
+      "chunk_chars": {
+        "min": 17,
+        "p10": 227.0,
+        "median": 692,
+        "mean": 645.4,
+        "p90": 967.6,
+        "max": 1106
+      },
+      "chunk_tokens": {
+        "min": 5,
+        "p10": 47.0,
+        "median": 133,
+        "mean": 126.9,
+        "p90": 194.6,
+        "max": 341
+      },
+      "total_chars": 194253,
+      "total_tokens": 38189,
+      "chunks_over_max_seq_length": 0,
+      "seconds": {
+        "chunk": 0.003,
+        "embed": 13.03,
+        "upsert": 0.31
+      },
+      "cost_usd": 0.0,
+      "upsert": {
+        "before": 0,
+        "after": 301,
+        "deleted_obsolete": 0,
+        "upserted": 301
+      }
+    },
+    "C": {
+      "chunking": "by_paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "collection": "B",
+      "filter": "metadata `chapter` when the question provides one",
+      "hypothesis": "Same chunks as B; scoping by chapter removes cross-chapter distractors on filter questions.",
+      "note": "reuses collection B (identical chunks and vectors)"
+    }
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "torch": "2.7.1+cu118",
+    "sentence_transformers": "5.5.1",
+    "pymupdf": "1.27.2.3"
+  }
+}

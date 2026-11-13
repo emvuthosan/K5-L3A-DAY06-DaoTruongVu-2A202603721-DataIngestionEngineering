@@ -1,4 +1,10 @@
-# Core setup and PDF parsing. Choose and install an embedding SDK separately.
+# Versions used for the submitted run (Python 3.11.9, Windows 10, CPU).
+# psycopg is kept from the original starter but is not used (vector store = Chroma).
 psycopg[binary]==3.3.8
 pypdf>=5,<7
 python-dotenv>=1,<2
+pymupdf==1.27.2.3
+chromadb==1.5.9
+sentence-transformers==5.5.1
+torch==2.7.1
+numpy>=1.26,<3

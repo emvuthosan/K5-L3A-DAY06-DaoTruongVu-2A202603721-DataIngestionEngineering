@@ -1,0 +1,131 @@
+{
+  "checked_at": "2026-11-13T10:48:56Z",
+  "questions_sha256": "40349481fc093ac32f6953ade8377ddc7872c1ba6c73ed62b3a47b27628a26e5",
+  "n_questions": 21,
+  "split_counts": {
+    "dev": 16,
+    "test": 5
+  },
+  "filter_counts": {
+    "dev": 3,
+    "test": 2
+  },
+  "evidence_checks": [
+    {
+      "id": "q01",
+      "page": 71,
+      "evidence_found": true
+    },
+    {
+      "id": "q02",
+      "page": 73,
+      "evidence_found": true
+    },
+    {
+      "id": "q03",
+      "page": 73,
+      "evidence_found": true
+    },
+    {
+      "id": "q04",
+      "page": 74,
+      "evidence_found": true
+    },
+    {
+      "id": "q05",
+      "page": 76,
+      "evidence_found": true
+    },
+    {
+      "id": "q05",
+      "page": 73,
+      "evidence_found": true
+    },
+    {
+      "id": "q06",
+      "page": 77,
+      "evidence_found": true
+    },
+    {
+      "id": "q07",
+      "page": 87,
+      "evidence_found": true
+    },
+    {
+      "id": "q08",
+      "page": 87,
+      "evidence_found": true
+    },
+    {
+      "id": "q09",
+      "page": 88,
+      "evidence_found": true
+    },
+    {
+      "id": "q10",
+      "page": 98,
+      "evidence_found": true
+    },
+    {
+      "id": "q11",
+      "page": 100,
+      "evidence_found": true
+    },
+    {
+      "id": "q12",
+      "page": 390,
+      "evidence_found": true
+    },
+    {
+      "id": "q12",
+      "page": 401,
+      "evidence_found": true
+    },
+    {
+      "id": "q13",
+      "page": 392,
+      "evidence_found": true
+    },
+    {
+      "id": "q14",
+      "page": 395,
+      "evidence_found": true
+    },
+    {
+      "id": "q15",
+      "page": 399,
+      "evidence_found": true
+    },
+    {
+      "id": "q16",
+      "page": 403,
+      "evidence_found": true
+    },
+    {
+      "id": "t01",
+      "page": 400,
+      "evidence_found": true
+    },
+    {
+      "id": "t02",
+      "page": 94,
+      "evidence_found": true
+    },
+    {
+      "id": "t03",
+      "page": 397,
+      "evidence_found": true
+    },
+    {
+      "id": "t04",
+      "page": 411,
+      "evidence_found": true
+    },
+    {
+      "id": "t05",
+      "page": 92,
+      "evidence_found": true
+    }
+  ],
+  "problems": []
+}

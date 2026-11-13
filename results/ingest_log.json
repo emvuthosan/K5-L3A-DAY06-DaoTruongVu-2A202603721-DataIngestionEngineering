@@ -1,0 +1,10 @@
+{
+  "seconds": 0.88,
+  "events": [
+    {
+      "page": 413,
+      "level": "info",
+      "message": "low-content page (120 chars) - not counted as content page"
+    }
+  ]
+}

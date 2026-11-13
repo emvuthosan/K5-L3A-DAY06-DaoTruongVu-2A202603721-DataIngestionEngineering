@@ -1,0 +1,616 @@
+{
+  "source_id": "openstax-pds",
+  "title": "Principles of Data Science (OpenStax)",
+  "source_path_or_url": {
+    "local": "data/raw/Principles-of-Data-Science-WEB.pdf",
+    "url": "https://assets.openstax.org/oscms-prodcms/media/documents/Principles-of-Data-Science-WEB.pdf",
+    "landing_page": "https://openstax.org/details/books/principles-data-science"
+  },
+  "license_or_permission": "CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/), as stated on the OpenStax book page; used for non-commercial coursework with attribution",
+  "accessed_at": "2026-11-13T10:24:19Z",
+  "snapshot": {
+    "sha256": "6b47205459a2f4e25a2b2a86369e674a26a5ae566a4cc428dd31047670692398",
+    "http_last_modified": "Tue, 21 Apr 2026 19:57:54 GMT",
+    "physical_pages_in_file": 569
+  },
+  "page_numbering": "page = 1-based physical PDF page index; printed_page = number printed in the running header (printed = physical - 10 for these chapters)",
+  "content_page_rule": "Only the chapter opener + numbered sections are ingested; end-of-chapter exercises, key terms and references are excluded. A page counts as a content page if its normalized body text has at least 500 characters.",
+  "chapters": [
+    {
+      "chapter": 2,
+      "title": "Collecting and Preparing Data",
+      "first_page": 67,
+      "last_page": 103,
+      "excluded_after": "Key Terms (p.104), Group Project, Critical Thinking, References"
+    },
+    {
+      "chapter": 8,
+      "title": "Ethics Throughout the Data Science Cycle",
+      "first_page": 387,
+      "last_page": 413,
+      "excluded_after": "Key Terms (p.414), Group Project, Chapter Review, Critical Thinking, References"
+    }
+  ],
+  "pages_ingested": 64,
+  "content_pages": 63,
+  "total_normalized_chars": 194764,
+  "pages": [
+    {
+      "page_id": "openstax-pds:p0067",
+      "page": 67,
+      "printed_page": null,
+      "chapter": 2,
+      "n_chars": 2367,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0068",
+      "page": 68,
+      "printed_page": 58,
+      "chapter": 2,
+      "n_chars": 3502,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0069",
+      "page": 69,
+      "printed_page": 59,
+      "chapter": 2,
+      "n_chars": 2916,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0070",
+      "page": 70,
+      "printed_page": 60,
+      "chapter": 2,
+      "n_chars": 3288,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0071",
+      "page": 71,
+      "printed_page": 61,
+      "chapter": 2,
+      "n_chars": 3800,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0072",
+      "page": 72,
+      "printed_page": 62,
+      "chapter": 2,
+      "n_chars": 4302,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0073",
+      "page": 73,
+      "printed_page": 63,
+      "chapter": 2,
+      "n_chars": 4408,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0074",
+      "page": 74,
+      "printed_page": 64,
+      "chapter": 2,
+      "n_chars": 4411,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0075",
+      "page": 75,
+      "printed_page": 65,
+      "chapter": 2,
+      "n_chars": 4174,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0076",
+      "page": 76,
+      "printed_page": 66,
+      "chapter": 2,
+      "n_chars": 3296,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0077",
+      "page": 77,
+      "printed_page": 67,
+      "chapter": 2,
+      "n_chars": 2749,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0078",
+      "page": 78,
+      "printed_page": 68,
+      "chapter": 2,
+      "n_chars": 3710,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0079",
+      "page": 79,
+      "printed_page": 69,
+      "chapter": 2,
+      "n_chars": 1027,
+      "n_images": 2,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0080",
+      "page": 80,
+      "printed_page": 70,
+      "chapter": 2,
+      "n_chars": 2154,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0081",
+      "page": 81,
+      "printed_page": 71,
+      "chapter": 2,
+      "n_chars": 2528,
+      "n_images": 2,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0082",
+      "page": 82,
+      "printed_page": 72,
+      "chapter": 2,
+      "n_chars": 3173,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0083",
+      "page": 83,
+      "printed_page": 73,
+      "chapter": 2,
+      "n_chars": 2726,
+      "n_images": 2,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0084",
+      "page": 84,
+      "printed_page": 74,
+      "chapter": 2,
+      "n_chars": 2599,
+      "n_images": 2,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0085",
+      "page": 85,
+      "printed_page": 75,
+      "chapter": 2,
+      "n_chars": 1490,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0086",
+      "page": 86,
+      "printed_page": 76,
+      "chapter": 2,
+      "n_chars": 3601,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0087",
+      "page": 87,
+      "printed_page": 77,
+      "chapter": 2,
+      "n_chars": 4169,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0088",
+      "page": 88,
+      "printed_page": 78,
+      "chapter": 2,
+      "n_chars": 1479,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0089",
+      "page": 89,
+      "printed_page": 79,
+      "chapter": 2,
+      "n_chars": 1053,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0090",
+      "page": 90,
+      "printed_page": 80,
+      "chapter": 2,
+      "n_chars": 3212,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0091",
+      "page": 91,
+      "printed_page": 81,
+      "chapter": 2,
+      "n_chars": 2741,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0092",
+      "page": 92,
+      "printed_page": 82,
+      "chapter": 2,
+      "n_chars": 3106,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0093",
+      "page": 93,
+      "printed_page": 83,
+      "chapter": 2,
+      "n_chars": 3384,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0094",
+      "page": 94,
+      "printed_page": 84,
+      "chapter": 2,
+      "n_chars": 4966,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0095",
+      "page": 95,
+      "printed_page": 85,
+      "chapter": 2,
+      "n_chars": 1767,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0096",
+      "page": 96,
+      "printed_page": 86,
+      "chapter": 2,
+      "n_chars": 1882,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0097",
+      "page": 97,
+      "printed_page": 87,
+      "chapter": 2,
+      "n_chars": 3131,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0098",
+      "page": 98,
+      "printed_page": 88,
+      "chapter": 2,
+      "n_chars": 3874,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0099",
+      "page": 99,
+      "printed_page": 89,
+      "chapter": 2,
+      "n_chars": 3261,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0100",
+      "page": 100,
+      "printed_page": 90,
+      "chapter": 2,
+      "n_chars": 2949,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0101",
+      "page": 101,
+      "printed_page": 91,
+      "chapter": 2,
+      "n_chars": 3381,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0102",
+      "page": 102,
+      "printed_page": 92,
+      "chapter": 2,
+      "n_chars": 3418,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0103",
+      "page": 103,
+      "printed_page": 93,
+      "chapter": 2,
+      "n_chars": 1253,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0387",
+      "page": 387,
+      "printed_page": null,
+      "chapter": 8,
+      "n_chars": 2204,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0388",
+      "page": 388,
+      "printed_page": 378,
+      "chapter": 8,
+      "n_chars": 4095,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0389",
+      "page": 389,
+      "printed_page": 379,
+      "chapter": 8,
+      "n_chars": 1605,
+      "n_images": 2,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0390",
+      "page": 390,
+      "printed_page": 380,
+      "chapter": 8,
+      "n_chars": 4491,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0391",
+      "page": 391,
+      "printed_page": 381,
+      "chapter": 8,
+      "n_chars": 3520,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0392",
+      "page": 392,
+      "printed_page": 382,
+      "chapter": 8,
+      "n_chars": 3992,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0393",
+      "page": 393,
+      "printed_page": 383,
+      "chapter": 8,
+      "n_chars": 3652,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0394",
+      "page": 394,
+      "printed_page": 384,
+      "chapter": 8,
+      "n_chars": 3967,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0395",
+      "page": 395,
+      "printed_page": 385,
+      "chapter": 8,
+      "n_chars": 3619,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0396",
+      "page": 396,
+      "printed_page": 386,
+      "chapter": 8,
+      "n_chars": 4009,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0397",
+      "page": 397,
+      "printed_page": 387,
+      "chapter": 8,
+      "n_chars": 3862,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0398",
+      "page": 398,
+      "printed_page": 388,
+      "chapter": 8,
+      "n_chars": 3529,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0399",
+      "page": 399,
+      "printed_page": 389,
+      "chapter": 8,
+      "n_chars": 4647,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0400",
+      "page": 400,
+      "printed_page": 390,
+      "chapter": 8,
+      "n_chars": 3548,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0401",
+      "page": 401,
+      "printed_page": 391,
+      "chapter": 8,
+      "n_chars": 4242,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0402",
+      "page": 402,
+      "printed_page": 392,
+      "chapter": 8,
+      "n_chars": 3813,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0403",
+      "page": 403,
+      "printed_page": 393,
+      "chapter": 8,
+      "n_chars": 3852,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0404",
+      "page": 404,
+      "printed_page": 394,
+      "chapter": 8,
+      "n_chars": 1949,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0405",
+      "page": 405,
+      "printed_page": 395,
+      "chapter": 8,
+      "n_chars": 3873,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0406",
+      "page": 406,
+      "printed_page": 396,
+      "chapter": 8,
+      "n_chars": 1579,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0407",
+      "page": 407,
+      "printed_page": 397,
+      "chapter": 8,
+      "n_chars": 2553,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0408",
+      "page": 408,
+      "printed_page": 398,
+      "chapter": 8,
+      "n_chars": 1123,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0409",
+      "page": 409,
+      "printed_page": 399,
+      "chapter": 8,
+      "n_chars": 699,
+      "n_images": 2,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0410",
+      "page": 410,
+      "printed_page": 400,
+      "chapter": 8,
+      "n_chars": 1549,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0411",
+      "page": 411,
+      "printed_page": 401,
+      "chapter": 8,
+      "n_chars": 2977,
+      "n_images": 1,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0412",
+      "page": 412,
+      "printed_page": 402,
+      "chapter": 8,
+      "n_chars": 4448,
+      "n_images": 0,
+      "counted_as_content": true
+    },
+    {
+      "page_id": "openstax-pds:p0413",
+      "page": 413,
+      "printed_page": 403,
+      "chapter": 8,
+      "n_chars": 120,
+      "n_images": 0,
+      "counted_as_content": false
+    }
+  ],
+  "generated_at": "2026-11-13T10:48:56Z"
+}

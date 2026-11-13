@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-11-13T10:49:35Z",
+  "same_version": {
+    "A": {
+      "count_before": 457,
+      "count_after": 457,
+      "expected": 457,
+      "unique_ids": 457,
+      "deleted_obsolete": 0,
+      "ok": true
+    },
+    "B": {
+      "count_before": 301,
+      "count_after": 301,
+      "expected": 301,
+      "unique_ids": 301,
+      "deleted_obsolete": 0,
+      "ok": true
+    }
+  },
+  "changed_document_simulation": {
+    "scenario": "document re-ingested without page 413",
+    "chunks_initial": 301,
+    "chunks_after": 300,
+    "deleted_obsolete": 1,
+    "expected_deleted": 1,
+    "ok": true
+  }
+}

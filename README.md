@@ -8,6 +8,31 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 |---|---|---|
 | Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
 
+## Bài làm — Đào Trường Vũ (2A202603721)
+
+Corpus: OpenStax *Principles of Data Science*, Chương 2 + 8 (63 trang nội dung). Embedding local `BAAI/bge-small-en-v1.5` (384 chiều, $0). Vector store: **Chroma 1.5.9** lưu trên đĩa (`chroma_db/`), metric cosine. Báo cáo: [report/individual/2A202603721_DaoTruongVu.md](report/individual/2A202603721_DaoTruongVu.md).
+
+| Thư mục / file | Nội dung |
+|---|---|
+| `starter/src/` | Pipeline: `ingestion.py`, `chunking.py`, `embeddings.py`, `store.py` (Chroma), `evaluation.py`, `run.py` |
+| `data/corpus_config.json`, `data/manifest.json` | Nguồn, giấy phép, SHA-256, danh sách trang + số ký tự |
+| `benchmark/questions.json`, `benchmark/verification.json` | 21 câu (16 dev / 5 test), evidence đã kiểm chứng, hash khóa benchmark |
+| `artifacts/experiment_log.csv` | Cấu hình + giả thuyết A/B/C và Hit@k |
+| `results/` | `pages.jsonl`, `chunks_*.jsonl`, `build_stats.json`, `traces/*.jsonl`, `summary.md`, `ann_check.json`, `reingest_check.json`, `audit/` (nhãn thủ công), `manual_summary.json` |
+
+Tái lập (Windows PowerShell; macOS/Linux đổi đường dẫn venv):
+
+```bash
+curl -L -o data/raw/Principles-of-Data-Science-WEB.pdf https://assets.openstax.org/oscms-prodcms/media/documents/Principles-of-Data-Science-WEB.pdf
+cd starter
+python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.txt
+.venv\Scripts\python -m src.run all --reset
+.venv\Scripts\python -m src.run labels
+```
+
+`ingest` dừng nếu SHA-256 của PDF khác `data/corpus_config.json`; `evaluate` dừng nếu `benchmark/questions.json` khác bản đã khóa. Lần chạy đầu tải model (~130 MB) từ Hugging Face.
+
 ## Bắt đầu nhanh
 
 Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.

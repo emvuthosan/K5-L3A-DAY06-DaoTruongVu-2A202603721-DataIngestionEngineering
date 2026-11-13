@@ -1,0 +1,52 @@
+{
+  "status": "DRAFT - labels proposed by Claude (AI) after reading each chunk; the student must review/override every label before submission and then set reviewed_by_student=true",
+  "reviewed_by_student": false,
+  "labeler": "Claude (AI draft)",
+  "method": "Coherence: rubric of GUIDE.md section 4.2 (0 = cut mid-idea / missing subject so not understandable; 1 = partly understandable, missing context; 2 = self-contained, keeps the whole idea). Grounding: GUIDE.md 4.4 on the 3 retrieved chunks together (0 = no evidence; 1 = evidence present but missing a needed condition/context; 2 = enough to answer and trace the source). Metadata: compare source/page/chapter/section of each test top-3 record with the raw PDF page (8-word probe from the middle of the chunk must occur on that physical page) and with the section headings on the page.",
+  "bias_note": "The labeler also wrote the pipeline and the benchmark and saw the automatic Hit@k before labeling, so labels are not blind; strategy C coherence equals B by construction (identical chunks).",
+  "coherence": {
+    "pos01": {"A": [1, "Starts mid-sentence ('data, a robust approach...') and ends cut at 'guarantee the'; main idea readable."],
+              "B": [2, "Whole paragraph from the chapter introduction, starts and ends on sentence boundaries."]},
+    "pos02": {"A": [1, "Starts with a fragment of the quota-sampling definition ('of interest is represented...') and ends cut ('may not accurately re')."],
+              "B": [2, "Names quota sampling explicitly, complete sentences; next list item (volunteer sampling) also starts cleanly."]},
+    "pos03": {"A": [1, "Regex list fragment: begins 'regular expression. For example' and ends at 'The + character is known as the \"plus sign\"'."],
+              "B": [1, "Starts mid-sentence 'would match an \"a\"...' because a quoted token ended the previous paragraph (normalization did not re-join it); rest is coherent."]},
+    "pos04": {"A": [0, "Starts with a broken word ('re 2.2 US Retail...'), mostly a figure credit, and the key fact is cut at '5,400 t'."],
+              "B": [1, "Example 2.6 problem is complete, but the chunk stops at the first line of the solution ('March 28,'), so the answer is in the next chunk."]},
+    "pos05": {"A": [0, "Starts with a broken word ('ization Breaking text...'), flattened table cells, ends mid-row."],
+              "B": [2, "Heading 'Text Preprocessing' + intro + first table rows ending on a full row; understandable on its own."]},
+    "pos06": {"A": [1, "Tail of the hospital DBMS paragraph plus the first sentence of 'Cloud Computing', cut at 'remote-access tools'."],
+              "B": [2, "Entire 'Cloud Computing' subsection; only a dangling 'EXAMPLE 2.8 Problem' label at the end."]},
+    "pos07": {"A": [1, "Starts inside answer option c ('research and create policies...'), ends cut at 'observ'."],
+              "B": [1, "Complete solution paragraph but 'The correct choice is D.' refers to options that are not in the chunk."]},
+    "pos08": {"A": [1, "Starts with 'pany.', mixes the end of Example 8.x (section 8.1) with the 8.2 heading and learning outcomes; section metadata says 8.1 only."],
+              "B": [2, "8.2 heading + learning outcomes + intro paragraph, all one topic."]},
+    "pos09": {"A": [1, "Starts 'to these practices:' and stops at item 6 of the list."],
+              "B": [1, "All 8 practices complete, but the lead-in sentence saying who must follow them is in the previous chunk."]},
+    "pos10": {"A": [1, "Starts with 'inciples,' and cuts the digital-divide definition at 'those who do'."],
+              "B": [2, "Complete paragraph defining the digital divide, causes and remedies."]}
+  },
+  "grounding": {
+    "t01": {"A": [2, "Top-1 contains item 3 'Imbalance of classes...biased toward that particular group' (only the final period is cut, so strict auto-match failed)."],
+            "B": [2, "Top-1 contains the full item 3 sentence."],
+            "C": [2, "Same chunks as B (filter chapter=8 already satisfied)."]},
+    "t02": {"A": [2, "Top-1 contains the three inspections (duplicates, mislaid values, external sources)."],
+            "B": [2, "Top-1 has the full answer; rank 2 is a chapter-8 'Data Validation' chunk that violates the user's chapter-2 scope but does not mislead."],
+            "C": [2, "Top-1 full answer; all three chunks from chapter 2 as requested."]},
+    "t03": {"A": [0, "No chunk mentions data engineers; p397 chunk stops right before the role list."],
+            "B": [0, "Top-3 are about security/compliance and data sharing; the role list on p397 is not retrieved."],
+            "C": [0, "Same as B (no filter for this question)."]},
+    "t04": {"A": [1, "Permission requirement present but cut ('before using it in'); the attribution/citation condition is missing."],
+            "B": [2, "Top-1 contains both the permission and the attribution/citation requirement."],
+            "C": [2, "Same as B."]},
+    "t05": {"A": [2, "Top-1 contains 'Log transformation is often used when the data is highly skewed, meaning most of the data points fall' - answer present though the window cuts the sentence end."],
+            "B": [2, "Top-1 full explanation including the effect (more symmetrical shape)."],
+            "C": [2, "Same as B."]}
+  },
+  "metadata": {
+    "rule": "A record is 'complete and correct' if source, page (physical), printed_page, chapter and section_id are present and match the PDF page and the heading structure.",
+    "records_checked_per_strategy": 15,
+    "errors": [],
+    "note": "All 45 records passed both the automatic page-slice check and the raw-PDF probe. Outside the test sample, 5 A chunks span two sections and carry only the starting section (e.g. A:openstax-pds:p0398:c003 labelled 8.1 but also contains the 8.2 heading)."
+  }
+}

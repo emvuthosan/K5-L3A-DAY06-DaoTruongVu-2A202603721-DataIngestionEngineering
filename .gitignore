@@ -8,3 +8,7 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# Day 06 submission: large / regenerable files
+data/raw/*.pdf
+chroma_db/
